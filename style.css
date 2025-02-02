@@ -1,0 +1,67 @@
+/* Basic Reset / Layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+.container {
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* Palette Layout */
+.palette {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+.color-box {
+  width: 100px;
+  height: 150px;
+  border-radius: 8px;
+  position: relative; /* So we can position the label */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.color-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Color Label */
+.color-label {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0,0,0,0.6);
+}
+
+/* Generate Button */
+#generateBtn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #6c63ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#generateBtn:hover {
+  background: #574fd6;
+}
